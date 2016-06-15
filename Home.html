@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        #canvas {
+            display: block;
+            border: 1px solid blue;
+            margin: 6px auto;
+        }
+        .slider
+        {
+            display:flex;
+            margin-left: 29%;
+        }
+        ul li{
+            list-style-type: none;
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+<body onload="myFunction1()">
+<canvas id="canvas" width="500" height="500" style="background-color: whitesmoke" onmousedown="whichElement(event)"></canvas>
+<ul class="slider">
+    <li>
+
+<input type="range" id="myRange" value="10">
+<button id="slider" value="clickMe" onclick="myFunction()">Increase Speed</button>
+
+    </li>
+    <li style="margin-left: 144px;">
+
+<button id="pausebtn" value="pauseBall" onclick="pauseBall()"><img src="Pause.png"></button>
+<button id="resumebtn" value="resumeBall" onclick="resumeBall()"><img src="Resume.png"></button>
+
+    </li>
+</ul>
+</body>
+</html>
